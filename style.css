@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/*-> Main Banner <-*/
+
+#bannerimg{
+  margin-bottom: -20px;
+}
+
+#banner-btn{
+  background-color: #ba445a !important
+}
+
+#banner-btn:hover {
+ -webkit-filter: brightness(70%);
+ filter: brightness(70%);
+}
+
+/*-> Project Icons <-*/
+
+#iconimg{
+  height: 164px;
+  margin-top: 25px;
+}
+
+#iconimg{
+  height: 164px;
+  margin-top: 25px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  
+}
+
+#iconimg:hover {
+ -webkit-filter: brightness(70%);
+ filter: brightness(70%);
+}
+
+
+.parallax-container {
+  height:400px;
+}
+
+/*-> Footer <-*/
+
+footer{
+  background-color: #ba445a !important
+}
+
+#icon{
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
