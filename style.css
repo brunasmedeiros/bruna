@@ -7,7 +7,7 @@ body {
 main {
   flex: 1 0 auto;
 }
-
+/*
 html {
   background-size: cover;              
   background-repeat: no-repeat;
@@ -17,10 +17,10 @@ html {
   background-image: url("bg.png");
   font-family: 'Lato', sans-serif;
 }
-
-.nav-wrapper .brand-logo img {
+*/
+/*.nav-wrapper .brand-logo img {
   height: 84px;
-}
+}*/
 
 
 #icon{
@@ -41,4 +41,21 @@ html {
 
 #cardheader{
   font-family: 'Cinzel', serif;
+}
+
+#bannerimg {
+  margin-bottom: -20px;
+}
+
+#banner-btn{
+  background-color: #ba445a !important
+}
+
+#iconimg{
+  height: 164px;
+  margin-top: 25px;
+}
+
+footer{
+  background-color: #ba445a !important
 }
