@@ -1,11 +1,17 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require("express");
+const cors = require("cors");
 
-var app = express();
+const app = express();
+app.use(cors()); // middleware to handle cross-origin requests with react client
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 
-app.listen(process.env.PORT || 3000)
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  })
+}
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
 
