@@ -14,7 +14,7 @@ const style = {
 export default function Content(){
   return (
     <React.Fragment>
-      {routes.map(({ path, name, Component }) => (
+      {routes.map(({ path, Component }) => (
         <Route key={path} exact path={path}>
           {({ match }) => (
             <CSSTransition
