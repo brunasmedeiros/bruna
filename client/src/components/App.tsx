@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.scss';
+import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faSun, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Navigation from "./Navigation";
 import Content from "./Content";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // adds icons to FA library so it may be referenced
 // by icon name as a string anywhere else in our app
@@ -12,12 +13,12 @@ library.add(fab, faSun, faEnvelope);
 
 const App: React.FC = () => {
   return (
-    <React.Fragment>
+    <Router>
       <Navigation/>
       <main>
         <Content/>
       </main>
-    </React.Fragment>
+    </Router>
   );
 };
 

@@ -1,21 +1,17 @@
 import React from "react";
+import { routes } from "../utils/routes";
+import { NavLink } from "react-router-dom";
 
 function Navigation(){
   return (
     <header>
-      <div className="navbar-fixed">
-        <nav>
-          <div className="nav-wrapper">
-            <div className="container">
-            <ul id="nav-mobile" className="right">
-              <li><a href="/about">About</a></li>
-              <li><a href="/career">Career</a></li>
-              <li><a href="/projects">Projects</a></li>
-            </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <nav>
+        {routes.map(({ path, name }) => (
+          <NavLink exact key={path} className="button--link" to={path}>
+            {name}
+          </NavLink>
+        ))}
+      </nav>
     </header>
   )
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ProjectSection() {
+export default function Career() {
   return (
     <div className="full--section">
-      <h3> Project </h3>
+      <h3> Career </h3>
     </div>
   )
 }

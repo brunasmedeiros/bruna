@@ -1,21 +1,36 @@
 import React from "react";
-import Container from "./Container";
-import Header from "./Header";
+import { Route } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+import {routes} from "../utils/routes";
 import ContactFloatEmail from "./ContactFloatEmail";
-import AboutSection from "./AboutSection";
-import CareerSection from "./CareerSection";
-import ProjectSection from "./ProjectSection";
+
+const style = {
+  height: "95vh",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center"
+};
 
 export default function Content(){
   return (
-    <Container>
-      <div className="scrollable--content">
-        <Header/>
-        <AboutSection/>
-        <CareerSection/>
-        <ProjectSection/>
-        <ContactFloatEmail />
-      </div>
-    </Container>
+    <React.Fragment>
+      {routes.map(({ path, name, Component }) => (
+        <Route key={path} exact path={path}>
+          {({ match }) => (
+            <CSSTransition
+              in={match != null}
+              timeout={900}
+              classNames="page"
+              unmountOnExit
+            >
+              <div className="page" style={style}>
+                <Component/>
+              </div>
+            </CSSTransition>
+          )}
+        </Route>
+      ))}
+      <ContactFloatEmail />
+    </React.Fragment>
   )
 }
