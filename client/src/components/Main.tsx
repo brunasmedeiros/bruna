@@ -11,9 +11,9 @@ const style = {
   justifyContent: "center"
 };
 
-export default function Content(){
+export default function Main(){
   return (
-    <React.Fragment>
+    <main>
       {routes.map(({ path, Component }) => (
         <Route key={path} exact path={path}>
           {({ match }) => (
@@ -31,6 +31,6 @@ export default function Content(){
         </Route>
       ))}
       <ContactFloatEmail />
-    </React.Fragment>
+    </main>
   )
 }

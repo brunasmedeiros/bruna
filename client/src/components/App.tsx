@@ -4,7 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faSun, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Navigation from "./Navigation";
-import Content from "./Content";
+import Main from "./Main";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // adds icons to FA library so it may be referenced
@@ -15,9 +15,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navigation/>
-      <main>
-        <Content/>
-      </main>
+      <Main />
     </Router>
   );
 };

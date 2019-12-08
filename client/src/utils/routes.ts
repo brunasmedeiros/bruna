@@ -5,7 +5,7 @@ import Connect from "../components/pages/Connect";
 
 export const routes = [
   { path: "/", name: "Home", Component: Home },
-  { path: "/about", name: "About", Component: About },
   { path: "/projects", name: "Projects", Component: Projects },
+  // { path: "/about", name: "Work", Component: About },
   { path: "/connect", name: "Connect", Component: Connect }
 ];

@@ -23,9 +23,7 @@ footer {
 }
 
 nav {
-  text-transform: uppercase;
   padding-top: 30px;
-  box-shadow: none;
   text-align: center;
   position: fixed;
   top: 0;
@@ -146,7 +144,7 @@ h3 {
 
 a.button--link {
   color: orange;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   font-weight: lighter;
 }
