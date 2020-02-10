@@ -2,14 +2,6 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import {routes} from "../utils/routes";
-import ContactFloatEmail from "./ContactFloatEmail";
-
-const style = {
-  height: "95vh",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center"
-};
 
 export default function Main(){
   return (
@@ -23,14 +15,13 @@ export default function Main(){
               classNames="page"
               unmountOnExit
             >
-              <div className="page" style={style}>
+              <div className="page">
                 <Component/>
               </div>
             </CSSTransition>
           )}
         </Route>
       ))}
-      <ContactFloatEmail />
     </main>
   )
 }

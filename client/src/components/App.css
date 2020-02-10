@@ -44,23 +44,26 @@ h3 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  position: absolute;
+  max-height: calc(100vh - 90px);
+  overflow: scroll;
+}
+
+@media (min-width: 350px) {
+  .container {
+    width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 80%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+    width: 70%;
   }
 }
 
@@ -85,6 +88,32 @@ h3 {
   transform: rotate(270deg);
 }
 
+.profile--img {
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+}
+
+.text--spaced {
+  line-height: 2;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.social--link {
+  padding: 5px;
+}
+
+.padding--top {
+  padding-top: 10px;
+}
+
+.text--right {
+  text-align: right;
+}
+
 /*
  * Animations
  */
@@ -95,7 +124,7 @@ h3 {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: typing 3.0s steps(30, end), blink-caret .75s step-end infinite;
+  animation: typing 2.0s steps(30, end), blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
@@ -116,11 +145,16 @@ h3 {
 
 /* Page animations */
 .page {
-    color: white;
-    position: fixed;
-    width: 100%;
-    background-color: #282c34;
-    top: 0;
+  color: white;
+  position: fixed;
+  width: 100%;
+  background-color: #282c34;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 80vh;
 }
 
 .page-enter {
@@ -163,3 +197,4 @@ a.button--link:after {
 a.button--link:last-child:after {
   content: "";
 }
+
