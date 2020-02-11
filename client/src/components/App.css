@@ -91,11 +91,11 @@ h3 {
 .profile--img {
   width: 150px;
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .text--spaced {
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .text--center {
