@@ -1,0 +1,200 @@
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #282c34 !important;
+  font-family: 'Sulphur Point', sans-serif;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  color: rgba(255, 255, 255, .5);
+  background-color: #282c34 !important;
+}
+
+nav {
+  padding-top: 30px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  max-height: calc(100vh - 90px);
+  overflow: scroll;
+}
+
+@media (min-width: 350px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}
+
+
+.app_root {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+}
+
+.container--header {
+  min-height: 40rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.email__contact {
+  position: fixed;
+  bottom: 20%;
+  right: -50px;
+  transform: rotate(270deg);
+}
+
+.profile--img {
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+}
+
+.text--spaced {
+  line-height: 1.8;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.social--link {
+  padding: 5px;
+}
+
+.padding--top {
+  padding-top: 10px;
+}
+
+.text--right {
+  text-align: right;
+}
+
+/*
+ * Animations
+ */
+
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 2.0s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Page animations */
+.page {
+  color: white;
+  position: fixed;
+  width: 100%;
+  background-color: #282c34;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 80vh;
+}
+
+.page-enter {
+    transform: translate(100%);
+}
+
+.page-enter-active {
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+}
+
+.page-exit {
+    transform: translate(0%);
+}
+
+.page-exit-active {
+    transform: translate(-100%);
+    transition: transform 1000ms ease-in-out;
+}
+
+
+a.button--link {
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+a.button--link.active {
+  color: white;
+}
+
+a.button--link:after {
+  content: "\00B7";
+  padding-left: 10px;
+  padding-right: 10px;
+  color: orange;
+}
+
+a.button--link:last-child:after {
+  content: "";
+}
+
