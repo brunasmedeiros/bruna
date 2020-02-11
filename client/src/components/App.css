@@ -114,6 +114,10 @@ h3 {
   text-align: right;
 }
 
+.margin--bottom {
+  margin-bottom: 30px;
+}
+
 /*
  * Animations
  */
