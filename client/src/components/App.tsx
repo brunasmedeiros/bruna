@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../styles/App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faTwitterSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faSun, faEnvelope, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'

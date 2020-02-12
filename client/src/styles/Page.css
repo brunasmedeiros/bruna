@@ -1,0 +1,36 @@
+/* Page animations */
+.page {
+    color: white;
+    width: 100%;
+    page: absolute;
+    background-color: #282c34;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.page-enter {
+    position: fixed;
+    transform: translate(100%);
+}
+
+.page-enter-active {
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+}
+
+.page-exit {
+    transform: translate(0%);
+}
+
+.page-exit-active {
+    transform: translate(-100%);
+    transition: transform 1000ms ease-in-out;
+}
+
+.page-enter-done {
+    position: absolute;
+    top: 0;
+}

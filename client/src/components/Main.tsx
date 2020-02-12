@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import {routes} from "../utils/routes";
+import "../styles/Page.css"
 
 export default function Main(){
   return (
