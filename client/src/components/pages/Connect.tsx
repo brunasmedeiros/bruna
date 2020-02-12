@@ -30,7 +30,7 @@ export default function Connect() {
         Talk to you soon,<br/>
         Bruna
       </p>
-      <div className="text--right margin--bottom">
+      <div className="text--right">
         <Link href="https://www.linkedin.com/in/brunaenos/">
           <FontAwesomeIcon size="2x" icon={["fab", "linkedin"]} />
         </Link>
