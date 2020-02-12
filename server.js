@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
+const path = require("path");
+
 app.use(cors()); // middleware to handle cross-origin requests with react client
 
 if (process.env.NODE_ENV === "production") {
